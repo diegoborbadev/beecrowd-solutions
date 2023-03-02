@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Scanner leitor = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         
-        int a = leitor.nextInt();
-        int b = leitor.nextInt();
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
         
         System.out.printf( "X = %d\n", a + b) ; 
     }
