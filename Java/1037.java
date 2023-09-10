@@ -5,12 +5,19 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		Scanner scanner = new Scanner(System.in);
 
-		float[] t = new float[] {4.00f, 4.50f, 5.00f, 2.00f, 1.50f};
-		
-		int n = scanner.nextInt();
-		int q = scanner.nextInt();
+		double n = scanner.nextDouble();
 
-		System.out.printf("Total: R$ %.2f%n", t[n-1] * q);
+		if (n < 0 || n > 100) {
+			System.out.println("Fora de intervalo");
+		} else if (n <= 25) {
+			System.out.println("Intervalo [0,25]");
+		} else if (n <= 50) {
+			System.out.println("Intervalo (25,50]");
+		} else if (n <= 75) {
+			System.out.println("Intervalo (50,75]");
+		} else if (n <= 100) {
+			System.out.println("Intervalo (75,100]");
+		}
 
 		scanner.close();
 	}
