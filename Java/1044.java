@@ -13,7 +13,5 @@ public class Main {
         } else {
             System.out.println("Nao sao Multiplos");
         }
-
-        scanner.close();
     }
 }

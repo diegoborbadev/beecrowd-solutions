@@ -15,7 +15,5 @@ public class Main {
         } else { 
             System.out.println("Valores nao aceitos");
         }
-
-		scanner.close();
     }
 }

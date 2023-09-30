@@ -11,7 +11,5 @@ public class Main {
 		int q = scanner.nextInt();
 
 		System.out.printf("Total: R$ %.2f%n", t[n-1] * q);
-
-		scanner.close();
 	}
 }

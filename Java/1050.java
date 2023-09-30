@@ -36,6 +36,5 @@ public class Main {
                 System.out.println("DDD nao cadastrado");
         }
 
-        scanner.close();
     }
 }

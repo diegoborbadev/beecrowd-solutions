@@ -11,7 +11,5 @@ public class Main {
         double y2 = scanner.nextDouble();
 
         System.out.printf("%.4f%n", Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2)));
-
-        scanner.close();
     }
 }

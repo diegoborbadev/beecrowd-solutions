@@ -18,7 +18,5 @@ public class Main {
 		} else if (n <= 100) {
 			System.out.println("Intervalo (75,100]");
 		}
-
-		scanner.close();
 	}
 }

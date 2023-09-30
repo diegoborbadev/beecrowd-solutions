@@ -16,7 +16,5 @@ public class Main {
         int s = t;
         
         System.out.println(h + ":" + m + ":" + s);	
-
-        scanner.close();
     }
 }

@@ -9,7 +9,5 @@ public class Main {
         double volume = (4.0 / 3.0) * 3.14159 * Math.pow(raio, 3);
 
         System.out.printf("VOLUME = %.3f%n", volume);
-
-        scanner.close();
     }
 }

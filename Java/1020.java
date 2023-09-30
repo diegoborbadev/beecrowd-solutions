@@ -28,7 +28,5 @@ public class Main {
 		}
 		
 		System.out.printf("%d dia(s)\n", d);
-
-		scanner.close();
     }
 }

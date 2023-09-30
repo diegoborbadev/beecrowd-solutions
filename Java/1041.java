@@ -29,7 +29,5 @@ public class Main {
         } else if (y < 0 && x > 0) {
             System.out.println("Q4");
         }
-
-        scanner.close();
     }
 }

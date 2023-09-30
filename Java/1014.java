@@ -9,7 +9,5 @@ public class Main {
 		double y = Double.valueOf(scanner.nextLine());
 
 		System.out.println(String.format("%.3f km/l", x / y));
-
-		scanner.close();
     }
 }

@@ -18,7 +18,5 @@ public class Main {
         
         System.out.printf("R1 = %.5f\n", (-B + r) / (2 * A));
         System.out.printf("R2 = %.5f\n", (-B - r) / (2 * A));
-
-		scanner.close();
 	}
 }

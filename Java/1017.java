@@ -9,7 +9,5 @@ public class Main {
         double vm = scanner.nextInt();
 
         System.out.printf("%.3f%n", (h * vm) / 12);
-
-        scanner.close();
     }
 }
