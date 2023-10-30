@@ -2,32 +2,39 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        Scanner leitor = new Scanner(System.in);
-        int N = leitor.nextInt();
-        int K = leitor.nextInt();
-        int[] notas = new int[N];
-        int classificados = K;
-        for (int i = 0; i < N; i++) {
-        	notas[i] = leitor.nextInt();
-        }
-        sort(notas, 0, notas.length -1);
-        for (int i = K-1; i < N; i++) {
-        	if (i + 1 < notas.length && notas[i + 1] == notas[i]) classificados++;
-        	else break;
-        }
-        System.out.println(classificados);
-    }
-    
+	public static void main(String[] args) throws IOException {
+		Scanner scanner = new Scanner(System.in);
+		int N = scanner.nextInt();
+		int K = scanner.nextInt();
+
+		int[] arr = new int[N];
+		int r = K;
+
+		for (int i = 0; i < N; i++) {
+			arr[i] = scanner.nextInt();
+		}
+
+		sort(arr, 0, arr.length - 1);
+
+		for (int i = K - 1; i < N; i++) {
+			if (i + 1 < arr.length && arr[i + 1] == arr[i])
+				r++;
+			else
+				break;
+		}
+
+		System.out.println(r);
+	}
+
 	private static void sort(int[] v, int inicio, int fim) {
-		int aux, down, up, pivo, i;
-		pivo = v[inicio];
+		int aux, down, up, p, i;
+		p = v[inicio];
 		down = inicio;
 		up = fim;
 		while (down < up) {
-			while (v[down] >= pivo && down < fim)
+			while (v[down] >= p && down < fim)
 				down++;
-			while (v[up] < pivo && up > inicio)
+			while (v[up] < p && up > inicio)
 				up--;
 			if (down < up) {
 				aux = v[down];
@@ -35,9 +42,9 @@ public class Main {
 				v[up] = aux;
 			}
 		}
-		
+
 		v[inicio] = v[up];
-		v[up] = pivo;
+		v[up] = p;
 
 		if (inicio < up && inicio != up - 1)
 			sort(v, inicio, up - 1);
@@ -45,5 +52,4 @@ public class Main {
 		if (fim > down && up + 1 != fim)
 			sort(v, up + 1, fim);
 	}
-	
 }
