@@ -1,0 +1,22 @@
+SELECT
+	'Podium: ' || team AS RESULT
+FROM
+	league
+WHERE
+	POSITION <= 3
+UNION ALL
+SELECT
+	'Demoted: ' || team AS RESULT
+FROM
+	(
+	SELECT
+		team,
+		ROW_NUMBER() OVER (
+	ORDER BY
+		POSITION DESC) AS RANK
+	FROM
+		league
+	ORDER BY RANK DESC 
+) AS ranked
+WHERE
+	RANK <= 2
