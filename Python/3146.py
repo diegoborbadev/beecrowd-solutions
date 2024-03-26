@@ -1,0 +1,1 @@
+print("{:.2f}".format(float(input()) * 6.28))
