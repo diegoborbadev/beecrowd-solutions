@@ -1,0 +1,5 @@
+(def jon (read-line))
+(def doc (read-line))
+(if (>= (count jon) (count doc))
+  (println "go")
+  (println "no"))
