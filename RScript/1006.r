@@ -1,0 +1,5 @@
+input <- file('stdin', 'r')
+a <- as.double(readLines(input, n=1))
+b <- as.double(readLines(input, n=1))
+c <- as.double(readLines(input, n=1))
+write(paste(sprintf("MEDIA = %.1f", (a * 2 + b * 3 + c * 5) / 10)), '')
