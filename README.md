@@ -32,7 +32,7 @@ To access the solutions, navigate to the desired language directory and then to 
 - [TypeScript](https://github.com/search?q=repo%3Adiegoborbadev%2Fbeecrowd-solutions%20language%3Atypescript&type=code)
 
 ## Structure
-Each directory represents a programming language, and each file represents a solution within its respective programming language directory:
+Each directory represents a problem, and each file represents a solution in a different programming language:
 
 ```
 .
