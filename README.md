@@ -6,8 +6,8 @@ To access the solutions, navigate to the desired language directory and then to 
 
 #### Actual available languages:
 
-- [C#](https://github.com/search?q=repo%3Adiegoborbadev%2Fbeecrowd-solutions%20language%3Ac#&type=code)
-- [C++](https://github.com/search?q=repo%3Adiegoborbadev%2Fbeecrowd-solutions%20language%3Ac++&type=code)
+- [C#](https://github.com/search?q=repo%3Adiegoborbadev%2Fbeecrowd-solutions%20language%3Ac%23&type=code)
+- [C++](https://github.com/search?q=repo%3Adiegoborbadev%2Fbeecrowd-solutions%20language%3Ac%2B%2B&type=code)
 - [C](https://github.com/search?q=repo%3Adiegoborbadev%2Fbeecrowd-solutions%20language%3Ac&type=code)
 - [Clojure](https://github.com/search?q=repo%3Adiegoborbadev%2Fbeecrowd-solutions%20language%3Aclojure&type=code)
 - [Dart](https://github.com/search?q=repo%3Adiegoborbadev%2Fbeecrowd-solutions%20language%3Adart&type=code)
@@ -36,17 +36,17 @@ Each directory represents a programming language, and each file represents a sol
 
 ```
 .
-├── Java/
-│   ├── 1000.java
-│   ├── 1001.java
+├── 1001/
+│   ├── 1001.ex
+│   ├── 1001.py
+│   └── 1001.java
+├── 1002/
+│   ├── 1002.ex
 │   └── 1002.java
-├── C#/
-│   ├── 1000.cs
-│   └── 1001.cs
-└── Kotlin/
-    ├── 1000.kt
-    ├── 1002.kt
-    └── 1003.kt
+├── 3244/
+│   └── 3244.py
+└── 3624/
+    └── 3624.java
 ```
 
 ## Contributing
