@@ -1,3 +1,3 @@
-Scanf.scanf "%f" (fun r ->
-    Printf.printf "A=%.4f\n" (r *. r *. 3.14159);
+Scanf.scanf "%f %f" (fun n x ->
+    Printf.printf "%.2f\n" (x /. (n +. 2.0));
 )
