@@ -1,2 +1,2 @@
-r = gets.to_f
-puts format('A=%.4f', 3.14159 * r * r)
+n, x = gets.split.map(&:to_f)
+puts format('%.2f', x / (n + 2))
