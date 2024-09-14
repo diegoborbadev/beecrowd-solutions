@@ -1,7 +1,8 @@
 object Main {
     def main(args: Array[String]) {
-        val r = scala.io.StdIn.readDouble()
-        val a = 3.14159 * r * r
-        println(f"A=$a%.4f")
+        val input = scala.io.StdIn.readLine()
+        val Array(n, x) = input.split(" ").map(_.toDouble)
+        val r = x / (n + 2)
+        println(f"$r%.2f")
     }
 }

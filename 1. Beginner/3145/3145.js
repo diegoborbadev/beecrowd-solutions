@@ -1,6 +1,4 @@
-var inputs = require('fs').readFileSync('/dev/stdin', 'utf8').split(' ');
+const line = require('fs').readFileSync('/dev/stdin', 'utf8');
 
-var n = Number(inputs.shift());
-var x = Number(inputs.shift());
-   
-console.log((x /(n + 2)).toFixed(2));
+const [n, x] = line.split(' ').map(Number);
+console.log((x / (n + 2)).toFixed(2));
