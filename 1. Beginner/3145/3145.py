@@ -1,2 +1,2 @@
-r = float(input())
-print(f"A={3.14159*r**2:.4f}")
+n, x = [int(x) for x in input().split()]
+print(f"{x/(n + 2):.2f}")

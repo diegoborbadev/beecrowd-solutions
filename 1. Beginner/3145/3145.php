@@ -1,4 +1,4 @@
 <?php
-    $r = trim(fgets(STDIN));
-    printf("A=%.4f\n", 3.14159 * $r * $r);
+    list($n, $x) = explode(" ", fgets(STDIN));
+    printf("%.2f\n", $x /($n + 2));
 ?>
