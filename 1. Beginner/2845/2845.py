@@ -1,12 +1,12 @@
 n = int(input())
-e = list(map(int, input().split()))
+elfs = list(map(int, input().split()))
 
-e.sort()
+elfs.sort()
 
-nxt = e[-1] + 1
+nxt = elfs[-1] + 1
 
 while True:
-    for elf in e:
+    for elf in elfs:
         if nxt % elf == 0 and elf != 1:
             nxt += 1
             break
