@@ -2,7 +2,7 @@
 This repository contains solutions to Beecrowd problems, categorized by programming language.
 
 ## Getting Started
-To access the solutions, navigate to the desired language directory and then to the specific problem file. 
+To access the solutions, navigate to the desired language search and then to the specific problem file. 
 
 #### Actual available languages:
 
